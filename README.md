@@ -1,4 +1,4 @@
-# Sample repo with example of terraform variables, module and output usage
+# Sample repo with example of building and AWS EC2 instance using terraform variables, module and outputs
 
 ### Prerequisits
 
