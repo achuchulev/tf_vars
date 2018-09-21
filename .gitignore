@@ -2,4 +2,4 @@
 .DS_Store
 .terraform/
 terraform.tfstate*
-/module/.servers.tf.swo
+terraform.tfvars
