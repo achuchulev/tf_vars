@@ -1,7 +1,6 @@
-
 module "my-module" {
   tag_name               = "${var.tag_name}"
-  source                 = "./module"
+  source                 = "./module1"
   ami                    = "${var.ami}"
   instance_type          = "${var.instance_type}"
   subnet_id              = "${var.subnet_id}"
