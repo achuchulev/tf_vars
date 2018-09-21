@@ -8,7 +8,6 @@ variable "region" {
 variable "ami" {}
 variable "instance_type" {}
 variable "subnet_id" {}
-variable "identity" {}
 variable "key_pair" {}
 
 variable "vpc_security_group_ids" {
