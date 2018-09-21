@@ -1,11 +1,9 @@
-resource "aws_instance" "atanasc-w1" {
+module "my-module" {
+  tag_name               = "${var.tag_name}"
+  source                 = "./module"
   ami                    = "${var.ami}"
   instance_type          = "${var.instance_type}"
   subnet_id              = "${var.subnet_id}"
   vpc_security_group_ids = ["${var.vpc_security_group_ids}"]
-  key_name               = "${var.key_pair}"
-
-  tags {
-    Name = "${var.tag_name}"
-  }
+  key_pair               = "${var.key_pair}"
 }
