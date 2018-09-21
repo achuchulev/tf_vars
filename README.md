@@ -1,5 +1,7 @@
 # Sample repo with example of building and AWS EC2 instance using terraform variables, module and outputs
 
+### The purpose of this example is to use terraform variables, modules and outputs in our code to be easily understandable and simple to modify
+
 ### Prerequisits
 
 * AWS subscription
