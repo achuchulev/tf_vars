@@ -1,7 +1,7 @@
 variable "ami" {}
 variable "instance_type" {}
 variable "subnet_id" {}
-variable "identity" {}
+variable "key_pair" {}
 
 variable "tag_name" {
   default = "atanasc-ws1"
