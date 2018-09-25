@@ -16,8 +16,7 @@ transport:
   ssh_key: priv/id_rsa
 
 verifier:
-  name: terraform
-  reporter: doc
+  name: Inspec
   groups:
     - name: default
       controls:
