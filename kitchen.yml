@@ -1,0 +1,27 @@
+
+---
+driver:
+  name: terraform
+  variable_files:
+    - testing.tfvars
+
+provisioner:
+  name: terraform
+
+platforms:
+  - name: ubuntu
+
+transport:
+  name: ssh
+  ssh_key: priv/id_rsa
+
+verifier:
+  name: terraform
+  reporter: doc
+  groups:
+    - name: default
+      controls:
+        - check_pkg
+
+suites:
+  - name: default
