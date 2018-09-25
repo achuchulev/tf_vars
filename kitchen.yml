@@ -1,15 +1,27 @@
+
 ---
 driver:
-  name: ec2
+  name: terraform
+  variable_files:
+    - testing.tfvars
 
 provisioner:
-  name: chef_solo
+  name: terraform
 
 platforms:
-  - name: ubuntu-16.04
-  - name: centos-7
+  - name: ubuntu
+
+transport:
+  name: ssh
+  ssh_key: priv/id_rsa
+
+verifier:
+  name: terraform
+  reporter: doc
+  groups:
+    - name: default
+      controls:
+        - check_pkg
 
 suites:
   - name: default
-    run_list:
-    attributes:
