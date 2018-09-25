@@ -7,6 +7,7 @@
 * AWS subscription
 * AWS security group with inbound and outbound rules to allow SSH traffic and ICMP
 * terraform
+* kitchen
 
 ### Usage
 
@@ -56,5 +57,14 @@ terraform plan -var-file=terraform.tfvars
 * destroy the EC2 resource in AWS
 
 ```
-terraform plan -var-file=terraform.tfvars
+terraform destroy -var-file=terraform.tfvars
+```
+
+### Test
+
+* Automate test
+
+```
+kitchen test
+
 ```
