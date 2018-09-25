@@ -16,11 +16,7 @@ transport:
   ssh_key: priv/id_rsa
 
 verifier:
-  name: Inspec
-  groups:
-    - name: default
-      controls:
-        - check_pkg
+  name: inspec
 
 suites:
   - name: default
