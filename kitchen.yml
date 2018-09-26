@@ -11,17 +11,18 @@ provisioner:
 platforms:
   - name: ubuntu
 
-transport:
-  name: ssh
-  ssh_key: priv/id_rsa
-
 verifier:
   name: terraform
   reporter: doc
-  groups:
+  systems:
     - name: default
+      backend: ssh
+      user: ubuntu 
+      hosts_output: public_ip
+      key_files:
+       - ~/Documents/atanasc.pem
       controls:
-        - check_pkg
-
+      - check_pkg
+  
 suites:
   - name: default
