@@ -62,7 +62,7 @@ terraform plan -var-file=terraform.tfvars
 * deploy the EC2 resource in AWS
 
 ```
-terraform plan -var-file=terraform.tfvars
+terraform apply -var-file=terraform.tfvars
 
 ```
 
