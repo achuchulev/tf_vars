@@ -5,3 +5,4 @@ terraform.tfstate*
 terraform.tfvars
 .kitchen/
 .kitchen.local.yml
+Gemfile.lock
