@@ -74,6 +74,16 @@ terraform destroy -var-file=terraform.tfvars
 
 ### Test
 
+* modify the following values in _kitchen.yml_ to match yours
+
+```
+user: your_ami_user
+
+key_files:
+  - ~/path/to/your/privat_key
+
+```
+
 * Run manualy
 
 ```
