@@ -50,6 +50,8 @@ key_pair = "your_key_pair_name"
 
 ```
 
+* update _tag_name_ in _testing.tfvars_ to match yours
+
 * test the EC2 resource in AWS
 
 ```
