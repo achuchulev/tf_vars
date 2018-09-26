@@ -74,7 +74,7 @@ terraform destroy -var-file=terraform.tfvars
 
 ### Test
 
-* Automate test
+* Run manualy
 
 ```
 
@@ -82,5 +82,13 @@ kitchen list
 kitchen converge
 kitchen verify
 kitchen destroy
+
+```
+
+* Automate test
+
+```
+
+kitchen test
 
 ```
